@@ -1,0 +1,767 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    background-color: #212d38;
+}
+
+.hero-slider {
+    position: relative;
+    height: 400px; /* tinggi tetap */
+    overflow: hidden;
+    background-color: #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 15s infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+.slides img {
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; /* penting untuk tidak memotong gambar */
+    background-color: #f0f0f0; /* jika ada area kosong */
+    margin: 0 auto;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    36% { transform: translateX(-100%); }
+    66% { transform: translateX(-100%); }
+    69% { transform: translateX(-200%); }
+    99% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+.reservation-form {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-box form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form-box input, .form-box button {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-box button {
+    background-color: #2c3e50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-box button:hover {
+    background-color: #1a252f;
+}
+
+.about {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+/* FASILITAS CSS */
+
+.hero-fasilitas {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.hero-fasilitas .title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.fasilitas-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fasilitas-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.fasilitas-item:hover {
+    transform: translateY(-10px);
+}
+
+.fasilitas-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fasilitas-item h3 {
+    margin: 15px 0 5px;
+    font-size: 1.3rem;
+    color: #34495e;
+}
+
+.fasilitas-item p {
+    padding: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+
+/* kamar css */
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 28px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+/* Room Section */
+.room-section, .fasilitas-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.room ul, .fasilitas ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.room ul li::before,
+.fasilitas ul li::before {
+    content: "✔️";
+    margin-right: 8px;
+    color: green;
+}
+
+/* Room and Fasilitas Card */
+.room, .fasilitas {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.room:hover, .fasilitas:hover {
+    transform: translateY(-10px);
+}
+
+/* Room and Fasilitas Images */
+.room img, .fasilitas img {
+    width: 100%;
+    height: 200px; /* Menetapkan tinggi gambar tetap */
+    max-width: 350px; /* Menetapkan lebar maksimum gambar */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .room-section, .fasilitas-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+
+/* dashboardUser.css */
+
+/* Container utama */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Judul */
+.container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Grid kamar */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card kamar */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 100%;
+    max-width: 350px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.pemesanan-container {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.pemesanan-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.table th {
+    background-color: #f5f5f5;
+    color: #444;
+}
+
+.btn-logout {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-logout:hover {
+    background-color: #c82333;
+}
+
+/* Tombol bayar */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;  /* Warna saat hover */
+}
+
+.btn-success:active {
+    background-color: #1e7e34;  /* Warna saat tombol diklik */
+}
+
+.batalkan_pemesanan{
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    padding: 11px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.batalkan_pemesanan:hover {
+    background-color: #af2230;  /* Warna saat hover */
+}
+
+.batalkan_pemesanan:active {
+    background-color: #6e0b15;  /* Warna saat tombol diklik */
+}
+
+/* public/css/dashboardUser.css */
+/* css untuk halaman dashboard user */
+.hero-slider {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #696969;
+}
+
+.fade-slide {
+    transform: scale(1);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-slide.active {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1.03); /* sedikit zoom in */
+}
+
+
+.fade-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.fade-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.fade-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.slider .slides {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.slider .slides img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+}
+
+.reservation-button {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.reservation-button h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.reservation-button button {
+    background-color: #3490dc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-button button:hover {
+    background-color: #2779bd;
+}
+
+.about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+.about p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* styling buat halaman pesan kamar user */
+
+.kamar-section {
+    background-color: #f4f6f9;
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.room-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+}
+
+.room-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.room-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.room-facility {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.room-form {
+    margin-top: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.btn-pesan {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-pesan:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Loader styles */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* styling buat filter */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 160px;
+}
+
+.btn-filter {
+    padding: 0.5rem 1rem;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #084298;
+}
+
+
+/* style filter */
+
+

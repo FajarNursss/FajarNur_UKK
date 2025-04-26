@@ -1,0 +1,481 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Table */
+.table-pemesanan {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-pemesanan th,
+.table-pemesanan td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-pemesanan th {
+    background-color: #3498db;
+    color: white;
+}
+
+.table-pemesanan tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-pemesanan tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Aksi */
+.table-pemesanan button {
+    background-color: #27ae60;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-pemesanan button:hover {
+    background-color: #219150;
+}
+
+span {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #2d6a4f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #40916c;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    background-color: white;
+}
+
+button {
+    background-color: #52b788;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2d6a4f;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #2d6a4f;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #40916c;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    background-color: white;
+}
+
+button {
+    background-color: #52b788;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.pemesanan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.pemesanan-table th, .pemesanan-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.status.pending {
+    background-color: orange;
+}
+
+.status.konfirmasi {
+    background-color: green;
+}
+
+.btn-konfirmasi, .btn-detail {
+    padding: 6px 12px;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.btn-kwitansi {
+    background-color: #78BD39;
+    color: white;
+    padding: 6px 12px;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.btn-konfirmasi {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-detail {
+    background-color: #007bff;
+    color: white;
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.status-pending { background-color: #ffc107; }       /* kuning */
+.status-confirmed { background-color: #17a2b8; }      /* biru muda */
+.status-checked_in { background-color: #28a745; }     /* hijau */
+.status-checked_out { background-color: #6c757d; }    /* abu */
+.status-cancelled { background-color: #dc3545; }      /* merah */
+.status-expired { background-color: #343a40; }        /* hitam abu */
+.status-paid { background-color: #007bff; }           /* biru */
+
+/* Tambahkan ke file CSS untuk meningkatkan tampilan */
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+
+.detail-table {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.detail-table th,
+.detail-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-table th {
+    background-color: #f7f7f7;
+    color: #333;
+    width: 200px;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.status-confirmed {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.status-checked_in {
+    background-color: #198754;
+    color: #fff;
+}
+
+.status-checked_out {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.actions {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.actions form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Di dalam resepsionisDashboard.css atau file CSS lain yang relevan */
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Membesarkan tombol sedikit saat hover */
+}
+
+.back-button:active {
+    transform: scale(0.9); /* Membuat tombol sedikit mengecil saat ditekan */
+}
+
+/* Style untuk waktu sisa yang habis */
+table tr td.expired {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style untuk waktu yang tersisa */
+table tr td.time-left {
+    color: green;
+    font-weight: bold;
+}
+
+/* styling buat badge status */
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* Warna berdasarkan status */
+.status-pending {
+    background-color: #f0ad4e; /* kuning */
+}
+
+.status-confirmed {
+    background-color: #0275d8; /* biru */
+}
+
+.status-checked_in {
+    background-color: #5cb85c; /* hijau */
+}
+
+.status-checked_out {
+    background-color: #5bc0de; /* biru muda */
+}
+
+.status-cancelled {
+    background-color: #d9534f; /* merah */
+}
+
+.status-expired {
+    background-color: #6c757d; /* abu-abu */
+}
+
+.status-menunggu_konfirmasi {
+    background-color: #ffa500; /* oranye */
+}
+
+.status-paid {
+    background-color: #20c997; /* teal */
+}
+
+
+/* styling kwitansi */
+
+@media print {
+    .btn, nav, footer {
+        display: none !important;
+    }
+}

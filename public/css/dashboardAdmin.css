@@ -1,0 +1,667 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d6a4f;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+.btn-logout {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* Admin Dashboard Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* Table */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.admin-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button Aksi */
+.admin-table button {
+    background-color: #27ae60;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.admin-table button:hover {
+    background-color: #219150;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .admin-table th, .admin-table td {
+        padding: 8px 10px;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Form Container */
+.form-container {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #2d6a4f;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Input Fields */
+input[type="text"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+    font-size: 1rem;
+}
+input[type="email"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+    font-size: 1rem;
+}
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+    font-size: 1rem;
+}
+input[type="select"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f5f7fa;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Buttons */
+
+.btn-tambah{
+    background-color: #3498DB;
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+    
+
+}
+
+
+/* Table for Listing Data (Fasilitas / Kamar) */
+.table-crud {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table-crud th,
+.table-crud td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-crud th {
+    background-color: #2D6A4F;
+    color: rgb(255, 255, 255);
+}
+
+.table-crud tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-crud tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Buttons (Edit, Delete) */
+.action-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 5px;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #e67e22;
+}
+
+.delete-btn {
+    background-color: #ff1900;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Form Errors */
+.alert {
+    background-color: #00ff22;
+    color: #721c24;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.alert ul {
+    list-style: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"],
+    textarea,
+    button[type="submit"] {
+        font-size: 0.9rem;
+    }
+
+    .table-crud th,
+    .table-crud td {
+        padding: 10px;
+    }
+}
+
+/* Tombol Logout */
+.btn-logout {
+    background-color: #e74c3c; /* Merah untuk logout */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b; /* Merah lebih gelap saat hover */
+}
+
+/* Tombol Hapus */
+.delete-btn {
+    background-color: #e74c3c; /* Merah untuk hapus */
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b; /* Merah lebih gelap saat hover */
+}
+
+/* Fasilitas CRUD Page */
+.fasilitas-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fasilitas-page h2 {
+    font-size: 1.8rem;
+    color: #2d6a4f;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.container a.btn-add {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.fasilitas-page a.btn-add:hover {
+    background-color: #2980b9;
+}
+
+.table-fasilitas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-fasilitas th,
+.table-fasilitas td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-fasilitas th {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+.table-fasilitas tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-fasilitas tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-fasilitas img {
+    max-width: 100px;
+    border-radius: 6px;
+}
+
+/* Tombol aksi edit dan hapus */
+.btn-action {
+    background-color: #f39c12;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-action:hover {
+    background-color: #e67e22;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+/* Form Fasilitas */
+.form-fasilitas {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-fasilitas label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-fasilitas input[type="text"],
+.form-fasilitas textarea,
+.form-fasilitas input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f5f7fa;
+}
+
+.form-fasilitas textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.form-fasilitas button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.form-fasilitas button:hover {
+    background-color: #4e1a1a;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-tambah {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.table-user {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-user th, .table-user td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.simpan_edit_fasilitas {
+    background-color: #2D6A4F;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.simpan_kembali_fasilitas {
+    background-color: #a81111;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_kembali{
+    background-color: #E74C3C;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-fasilitas {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Biar scroll muncul di layar kecil */
+}
+
+.table-fasilitas th,
+.table-fasilitas td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+    .table-fasilitas td img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+/* styling filter */
+.form-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-filter input,
+.form-filter select {
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px; /* atau bebas mau seberapa panjang */
+}
+
+.form-filter button.btn-filter {
+    padding: 10px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px; /* biar ada jarak dikit */
+    transition: background-color 0.3s;
+}
+
+.form-filter button.btn-filter:hover {
+    background-color: #218838;
+}
+
